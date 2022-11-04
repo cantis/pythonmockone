@@ -1,0 +1,8 @@
+[project]
+name = 'pythonmockone'
+desscription = 'learning python mocking'
+authors = { name = 'Evan Young', email = 'cantis@gmail.com' }
+
+[tool.black]
+skip-string-normalization = true
+max-line-length = 120
