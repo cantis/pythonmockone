@@ -6,7 +6,6 @@ def test_main(mocker):
 
     # act
     result = main.dependant_value()
-
     # assert
     assert result == 42
 
