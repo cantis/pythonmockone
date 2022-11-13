@@ -19,6 +19,7 @@ engine = create_engine(posgres_url)
 # Base.metadata.create_all(engine)
 
 
+
 def dependant_value() -> int:
     return 48
 

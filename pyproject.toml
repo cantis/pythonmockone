@@ -45,3 +45,11 @@ tomli = "^2.0.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+name = 'pythonmockone'
+desscription = 'learning python mocking'
+authors = { name = 'Evan Young', email = 'cantis@gmail.com' }
+
+[tool.black]
+skip-string-normalization = true
+max-line-length = 120

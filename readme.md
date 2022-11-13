@@ -1,5 +1,11 @@
-#Python Mock One
+# Python Mock One
 Learning the Python PyTest Mock library
+
+## Developer Setup
+- create virtual environment
+- install libraries via pip
+- create .env file
+- launch is set to start with the main.py file open
 
 **2022-10-21**
 I've been able to get a basic mock working, not sure if I'm doing it 'right' but the patch works.
