@@ -12,8 +12,10 @@ skip-string-normalization = true
 max-line-length = 120
 
 [tool.pytest.ini_options]
-addopts = "--import-mode=importlib"
-pythonpath = "core"
+addopts = "--import-mode=importlib -ra -q"
+pythonpath = "."
+testpaths = ["tests"]
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
