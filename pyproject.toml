@@ -1,11 +1,10 @@
-[project]
+[tool.poetry]
 name = "pythonmockone"
-version = "0.1"
-requires-python = ">=3.9"
-description = "Learning Python Mocking"
-authors = [{ name = "Evan Young", email = "cantis@gmail.com" }]
-license = { file = "licence.txt" }
+version = "0.1.0"
+description = "Learning Python Mockinig"
+authors = ["Evan Young <cantis@gmail.com>"]
 readme = "README.md"
+license = "MIT"
 
 [tool.black]
 skip-string-normalization = true
@@ -15,7 +14,6 @@ max-line-length = 120
 addopts = "--import-mode=importlib -ra -q"
 pythonpath = "."
 testpaths = ["tests"]
-
 
 [tool.poetry.dependencies]
 python = "^3.10"

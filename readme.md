@@ -19,7 +19,7 @@ Reference for this section is the tutorial at https://www.learndatasci.com/tutor
 Moving configuration over to poetry, trying to fix the pytest bug with proper configuration?
 
 **2022-11-17**
-~~Still fighting with the configuration of pytest, the program runs properly but I can't get pytest to run.~~ OK, I added `pythonpath = "."` to the pytest section in the `pyproject.toml` file and it's _mostly_ working now. I've also learned that `python -m pytest` is NOT quite the same as `pytest`, the full command adds the current directory to the path, which is what I needed. Now I can figure out the patching. 
+~~Still fighting with the configuration of pytest, the program runs properly but I can't get pytest to run.~~ OK, I added `pythonpath = "."` to the pytest section in the `pyproject.toml` file and it's _mostly_ working now. I've also learned that `python -m pytest` is NOT the same as `pytest`, the full command adds the current directory to the path, which is what I needed. Now I can figure out the patching.
 
 
 
