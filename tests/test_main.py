@@ -1,9 +1,11 @@
+import pytest
+
 from app.core import main
 
 
-def test_main():
+def test_main(mocker):
     # arrange
-    # mocker.patch.object("main.dependant_value", return_value=99)
+    mocker.patch("app.core.main.dependant_value", return_value=99)
 
     # act
     result = main.main()
