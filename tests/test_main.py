@@ -1,9 +1,9 @@
-from app.core.main import dependant_value, main
+from app.core import main
 
 
-def test_main(mocker):
+def test_main():
     # arrange
-    mocker.patch.object("main.dependant_value", return_value=99)
+    # mocker.patch.object("main.dependant_value", return_value=99)
 
     # act
     result = main.main()

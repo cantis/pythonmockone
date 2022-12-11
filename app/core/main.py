@@ -1,5 +1,5 @@
 import os
-pyfrom dotenv import load_dotenv
+from dotenv import load_dotenv
 from sqlalchemy import create_engine
 
 # from models import Book
