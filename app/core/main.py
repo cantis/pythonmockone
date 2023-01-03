@@ -1,32 +1,45 @@
 import os
 from dotenv import load_dotenv
+from typing import List
 from sqlalchemy import create_engine
+from sqlalchemy.orm import Session
+
+from app.core.models import Book, create_tables
 
 # from models import Book
 
 load_dotenv()
 
+host = os.getenv('POSTGRES_HOST')
 username = os.getenv("POSTGRES_USERNAME")
 password = os.getenv("POSTGRES_PASSWORD")
 database = os.getenv("POSTGRES_DATABASE")
 
-# set the postgres connection string
-posgres_url = f"postgresql://{username}:{password}@localhost:5432/{database}"
+# set the PostgreSQL connection string
+db_url = f"postgresql://{username}:{password}@localhost:5432/{database}"
 
-# connect to the postgres database
-engine = create_engine(posgres_url)
+# connect to the PostgreSQL database
+engine = create_engine(db_url)
+session = create_tables(engine)
 
-# Base.metadata.create_all(engine)
+# Add books to the database
+book_list = []
+book_list.append(Book(title="The Hitchhiker's Guide to the Galaxy", author="Douglas Adams", pages=224, published="1979-10-12"))
+book_list.append(Book(title="The Restaurant at the End of the Universe", author="Douglas Adams", pages=160, published="1980-10-12"))
+book_list.append(Book(title="Life, the Universe and Everything", author="Douglas Adams", pages=224, published="1982-10-12"))
+book_list.append(Book(title="So Long, and Thanks for All the Fish", author="Douglas Adams", pages=224, published="1984-10-12"))
+book_list.append(Book(title="Mostly Harmless", author="Douglas Adams", pages=224, published="1992-10-12"))
+for book in book_list:
+    session.add(book)
+session.commit()
 
+def book_query() -> List[Book]:
+    return session.query(Book).all()
 
-def dependant_value() -> int:
-    return 48
-
-
-def main() -> str:
-    # temp =  Book(title="The Hitchhiker's Guide to the Galaxy", author="Douglas Adams", pages=224, published="1979-10-12")
-    return str(dependant_value())
+def main() -> None:
+    print (book_query())
 
 
 if __name__ == "__main__":
-    print(main())
+    main()
+
