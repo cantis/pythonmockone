@@ -3,7 +3,6 @@ import pytest
 from app.core import main
 from app.core.models import Book
 
-
 def test_main_mocked(mocker):
     # arrange
     hobbit = Book(title='The Hobbit', author='J.R.R. Tolkien', pages=295, published='1937-09-21')

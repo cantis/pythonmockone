@@ -11,8 +11,10 @@ skip-string-normalization = true
 max-line-length = 120
 
 [tool.pytest.ini_options]
-addopts = "--import-mode=importlib -ra -q"
-pythonpath = "."
+# -ra is for showing the output of the tests that failed
+# -q is for quiet mode
+addopts = "-ra -q"
+pythonpath = ["./app/", "./app/core"]
 testpaths = ["tests"]
 
 [tool.poetry.dependencies]
