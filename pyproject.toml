@@ -39,6 +39,14 @@ pluggy = "^1.0.0"
 pyparsing = "^3.0.9"
 sqlalchemy = "^1.4.44"
 tomli = "^2.0.1"
+ruff = "^0.0.212"
+
+[too.ruff]
+name = "pythonmockone"
+line-length = 120
+exclude = [".venv", "vscode"]
+# E501 is for line length
+ignore = ["E501"]
 
 [build-system]
 requires = ["poetry-core"]

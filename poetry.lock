@@ -238,6 +238,14 @@ python-versions = ">=3.7"
 cli = ["click (>=5.0)"]
 
 [[package]]
+name = "ruff"
+version = "0.0.212"
+description = "An extremely fast Python linter, written in Rust."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
 name = "sqlalchemy"
 version = "1.4.44"
 description = "Database Abstraction Library"
@@ -280,7 +288,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "9f4dbc175de275a653e54930682c85b23c203a5814259da5642d26a388c595ca"
+content-hash = "b3f7757bec3f8084bd7893576f700b812f3a3c83dd057d3f9f0044aa085b8d49"
 
 [metadata.files]
 alembic = [
@@ -488,6 +496,24 @@ pytest-mock = [
 python-dotenv = [
     {file = "python-dotenv-0.21.0.tar.gz", hash = "sha256:b77d08274639e3d34145dfa6c7008e66df0f04b7be7a75fd0d5292c191d79045"},
     {file = "python_dotenv-0.21.0-py3-none-any.whl", hash = "sha256:1684eb44636dd462b66c3ee016599815514527ad99965de77f43e0944634a7e5"},
+]
+ruff = [
+    {file = "ruff-0.0.212-py3-none-macosx_10_7_x86_64.whl", hash = "sha256:44d255185af522bd65183f248fa37caaf86de3bf805cf0885135384084bc0bcf"},
+    {file = "ruff-0.0.212-py3-none-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl", hash = "sha256:615e85f0da7915df88f09e17425075bde3554693ca7015e7b8dda9c67764c602"},
+    {file = "ruff-0.0.212-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:a06d232d3d36206097d96f74430057b2ec73fa68dc413bdbace365c967ed7696"},
+    {file = "ruff-0.0.212-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:4e6cc3b796ad67a4708f766503ed5acefd8c5b59ec3c99039673dc0c20a39f7b"},
+    {file = "ruff-0.0.212-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:e9df4f2dede02b7c4e9c0fedc09204a97a24674f39f9ee28ab39acfd6b28d3e2"},
+    {file = "ruff-0.0.212-py3-none-manylinux_2_17_ppc64.manylinux2014_ppc64.whl", hash = "sha256:91ca962468c586ed2bd53bbecd8676949bf04e46509d4b0f84b4dbaf1249cf12"},
+    {file = "ruff-0.0.212-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:555f615f2f036384eaeb056cf932289e7562a25d9d31607a8f6ab2a1783b2666"},
+    {file = "ruff-0.0.212-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:367d173b6d3204c5f325adfa4035ad6e2464ded6bd46035f1b5a6f0076afe136"},
+    {file = "ruff-0.0.212-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:3a97ad58799e005792ccaf382e70793776ad3634b517e911c1cc9af25322662f"},
+    {file = "ruff-0.0.212-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:6dc234f7eb039f3cb640a1ece650add3d7e36cbec6771f99af00070e531b17b1"},
+    {file = "ruff-0.0.212-py3-none-musllinux_1_2_armv7l.whl", hash = "sha256:d1ab6362b664a02f7e206a5c71f94f465c093817492b448d8fa0e4a7fe66da15"},
+    {file = "ruff-0.0.212-py3-none-musllinux_1_2_i686.whl", hash = "sha256:709edb49367c0ed07714c34615cc242914f0bf83d0369f4d41cb8b6b7921a45d"},
+    {file = "ruff-0.0.212-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:49b433c9f4494150540cfbfbcd33a055e152df7ab8d848a2023a8b8cff66faf9"},
+    {file = "ruff-0.0.212-py3-none-win32.whl", hash = "sha256:b999862e0b0c9e87349c75aad14803440b2d17721c614543fb8d1be91d92c247"},
+    {file = "ruff-0.0.212-py3-none-win_amd64.whl", hash = "sha256:02ffcd4681d06e4f531da7fc227c6d8c74d44bbeb3e7c513793e314b3cacdffc"},
+    {file = "ruff-0.0.212.tar.gz", hash = "sha256:fa26a65e4aff851c72b808fdc2f842d0a64edcb3bc4e4f6119f9ad169ba5dfbe"},
 ]
 sqlalchemy = [
     {file = "SQLAlchemy-1.4.44-cp27-cp27m-macosx_10_14_x86_64.whl", hash = "sha256:da60b98b0f6f0df9fbf8b72d67d13b73aa8091923a48af79a951d4088530a239"},
