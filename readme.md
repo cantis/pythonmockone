@@ -3,11 +3,17 @@
 Learning the Python PyTest Mock library
 
 ## Developer Setup
+- create virtual environment (I used `.venv` for my folder)
+- install libraries via `PS poetry install` (I use PowerShell)
+- create a `.env` file for DB Configuration
+  - the environment is expecting the following in the `.env`
+  - POSTGRES_USERNAME=*********
+  - POSTGRES_PASSWORD=*********
+  - POSTGRES_DATABASE=*********
+-   POSTGRES_HOST=*********
+- launch is configured in the vsCode launch.json
 
-- create virtual environment
-- install libraries via pip
-- create `.env` file
-- launch is set to start with the `main.py` file open
+## Daily Notes
 
 **2022-10-21**
 I've been able to get a basic mock working, not sure if I'm doing it 'right' but the patch works.
