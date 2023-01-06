@@ -30,7 +30,7 @@ I'm now pretty switched over to poetry, `pyproject.toml` and I'm now naming the 
 Well I got it working for a little while, but now I'm having a path issue with the tests, either the tests work or the main works, I REALLY wish I understood python pathing properly... this is aggravating! The test can't find the main module (even though my linter doesn't complain)
 
 **2023-01-06**
-Got the test configuration figured out! I added a python path entry in the `pyproject.toml` file to include the `app` and `app/core` directories! That got everything working properly!!!
+Got the test configuration figured out! I added a `pythonpath` entry in the `pyproject.toml` file to the `tool.pytest.ini_options` configuration section to include the `app/` and `app/core` directories! That got everything working properly!!!
 
 I am also trying out a new linter  - [ruff](https://github.com/charliermarsh/ruff) it suggests that it has near parity with flake8 but is configurable in `pyproject.toml`
 
